@@ -1,0 +1,14 @@
+---
+layout: main
+title: List
+desc: List of some written thoughts
+---
+
+<ol id='cogitationes' reversed='reversed'>
+{% for post in site.posts %}
+<li>
+  <a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a>
+  <span>{{ post.desc }}</span>
+</li>
+{% endfor %}
+</ol>
